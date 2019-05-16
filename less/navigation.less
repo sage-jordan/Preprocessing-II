@@ -1,1 +1,42 @@
 // Navigation Styles here
+.navigation {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0;
+    border-bottom: 2px dashed gray;
+    display: flex;
+
+    @media @mobile {
+        display: block;
+        width: 100%;
+    }
+
+    h1 {
+        margin-left: 50px;
+        margin-top: 20px;
+
+        @media @mobile {
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+
+    nav {
+        margin-left: 40%;
+        display: flex;
+        flex-wrap:nowrap;
+
+        @media @mobile {
+            margin: 0 5% 5%;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            margin: 15% 3% 0;
+            font-size:1.8rem;
+            display: block;
+            white-space: nowrap;
+        }
+    }
+}
