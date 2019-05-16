@@ -7,15 +7,29 @@
     border-bottom: 2px dashed gray;
     display: flex;
 
+    @media @mobile {
+        display: block;
+        width: 100%;
+    }
+
     h1 {
         margin-left: 50px;
         margin-top: 20px;
+
+        @media @mobile {
+            margin: 0 auto;
+            text-align: center;
+        }
     }
 
     nav {
         margin-left: 40%;
         display: flex;
         flex-wrap:nowrap;
+
+        @media @mobile {
+            margin: 0 5% 5%;
+        }
         a {
             text-decoration: none;
             color: black;
